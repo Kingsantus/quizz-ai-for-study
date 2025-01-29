@@ -1,0 +1,101 @@
+AIMessage {
+    lc_serializable: true,
+    lc_kwargs: {
+      content: '{\n' +
+        '  "quiz": {\n' +
+        '    "name": "Cloud Computing Quiz",\n' +
+        '    "description": "Test your knowledge on cloud computing based on the text provided.",\n' +
+        '    "questions": [\n' +
+        '      {\n' +
+        '        "questionText": "What do clouds do according to the text?",\n' +
+        '        "answers": [\n' +
+        '          {"answerText": "Bring rain", "isCorrect": true},\n' +
+        '          {"answerText": "Block sunlight"},\n' +
+        '          {"answerText": "Create snow"},\n' +
+        '          {"answerText": "Cause earthquakes"}\n' +
+        '        ]\n' +
+        '      },\n' +
+        '      {\n' +
+        '        "questionText": "What is a private cloud?",\n' +
+        '        "answers": [\n' +
+        '          {"answerText": "Services accessible and controlled by a single specific organization", "isCorrect": true},\n' +
+        '          {"answerText": "Services open to the public"},\n' +
+        '          {"answerText": "Free cloud services"},\n' +
+        '          {"answerText": "Services only for government organizations"}\n' +
+        '        ]\n' +
+        '      },\n' +
+        '      {\n' +
+        '        "questionText": "What is a public cloud?",\n' +
+        '        "answers": [\n' +
+        '          {"answerText": "Services provided on a shared but isolated platform open to 
+  the public", "isCorrect": true},\n' +
+        '          {"answerText": "Services accessible only by one organization"},\n' +        
+        '          {"answerText": "Services limited to startups"},\n' +
+        '          {"answerText": "Services that require constant upgrades"}\n' +
+        '        ]\n' +
+        '      },\n' +
+        '      {\n' +
+        '        "questionText": "What is a hybrid cloud?",\n' +
+        '        "answers": [\n' +
+        '          {"answerText": "A cloud environment that uses a combination of on-premises, 
+  private cloud, and public cloud services", "isCorrect": true},\n' +
+        '          {"answerText": "A cloud service that is completely free"},\n' +
+        '          {"answerText": "A cloud only available to government organizations"},\n' +  
+        '          {"answerText": "A cloud service for startups only"}\n' +
+        '        ]\n' +
+        '      }\n' +
+        '    ]\n' +
+        '  }\n' +
+        '}',
+      additional_kwargs: { function_call: undefined, tool_calls: undefined },
+      response_metadata: {}
+    },
+    lc_namespace: [ 'langchain_core', 'messages' ],
+    content: '{\n' +
+      '  "quiz": {\n' +
+      '    "name": "Cloud Computing Quiz",\n' +
+      '    "description": "Test your knowledge on cloud computing based on the text provided.",\n' +
+      '    "questions": [\n' +
+      '      {\n' +
+      '        "questionText": "What do clouds do according to the text?",\n' +
+      '        "answers": [\n' +
+      '          {"answerText": "Bring rain", "isCorrect": true},\n' +
+      '          {"answerText": "Block sunlight"},\n' +
+      '          {"answerText": "Create snow"},\n' +
+      '          {"answerText": "Cause earthquakes"}\n' +
+      '        ]\n' +
+      '      },\n' +
+      '      {\n' +
+      '        "questionText": "What is a private cloud?",\n' +
+      '        "answers": [\n' +
+      '          {"answerText": "Services accessible and controlled by a single specific organization", "isCorrect": true},\n' +
+      '          {"answerText": "Services open to the public"},\n' +
+      '          {"answerText": "Free cloud services"},\n' +
+      '          {"answerText": "Services only for government organizations"}\n' +
+      '        ]\n' +
+      '      },\n' +
+      '      {\n' +
+      '        "questionText": "What is a public cloud?",\n' +
+      '        "answers": [\n' +
+      '          {"answerText": "Services provided on a shared but isolated platform open to the public", "isCorrect": true},\n' +
+      '          {"answerText": "Services accessible only by one organization"},\n' +
+      '          {"answerText": "Services limited to startups"},\n' +
+      '          {"answerText": "Services that require constant upgrades"}\n' +
+      '        ]\n' +
+      '      },\n' +
+      '      {\n' +
+      '        "questionText": "What is a hybrid cloud?",\n' +
+      '        "answers": [\n' +
+      '          {"answerText": "A cloud environment that uses a combination of on-premises, private cloud, and public cloud services", "isCorrect": true},\n' +
+      '          {"answerText": "A cloud service that is completely free"},\n' +
+      '          {"answerText": "A cloud only available to government organizations"},\n' +    
+      '          {"answerText": "A cloud service for startups only"}\n' +
+      '        ]\n' +
+      '      }\n' +
+      '    ]\n' +
+      '  }\n' +
+      '}',
+    name: undefined,
+    additional_kwargs: { function_call: undefined, tool_calls: undefined },
+    response_metadata: { finish_reason: 'stop' }
+  }
