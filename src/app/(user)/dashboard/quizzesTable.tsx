@@ -20,7 +20,7 @@ const QuizzesTable = (props: Props) => {
             <tbody>
                 {
                     props.quizzes.map((quizz: Quizz) =>
-                        <tr key={quizz.id}>
+                        <tr key={quizz.id} className="gap-4">
                             <td><Link href={`/quizz/${quizz.id}`}><p className="text-blue-500 underline">{quizz.name}</p></Link></td>
                             <td>{quizz.description}</td>
                         </tr> 
