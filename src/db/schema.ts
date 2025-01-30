@@ -11,6 +11,7 @@ import {
 } from "drizzle-orm/pg-core";
 import type { AdapterAccount } from "@auth/core/adapters";
 import { relations } from "drizzle-orm";
+import { subscribe } from "diagnostics_channel";
 
 
 export const users = pgTable("user", {
@@ -21,6 +22,8 @@ export const users = pgTable("user", {
   email: text("email").unique().notNull(),
   emailVerified: timestamp("emailVerified", { mode: "date" }),
   image: text("image"),
+  stripeCustomerId: text("stripe_customer_id"),
+  subscribed: boolean("subscribed")
 });
 
 export const usersRelations = relations(users, ({ many }) => ({
