@@ -50,6 +50,12 @@ export function NavMenu() {
             <span>Profile</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
+          <Link href={"/quizz/new"} className="flex flex-row">
+          <Plus className="mr-2 h-4 w-4" />
+          <span>New Quizz</span>
+          </Link>
+          </DropdownMenuItem>
+          <DropdownMenuItem>
           <Link href={"/billing"} className="flex flex-row">
           <CreditCard className="mr-2 h-4 w-4" />
           <span>Billing</span>

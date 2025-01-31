@@ -35,3 +35,12 @@ export async function deleteSubscription({
         )
     );
 }
+
+export async function getUserSubscription({ userId }: {
+    userId: string }) {
+        const user = await db.query.users.findFirst({
+            where: eq(users.id, userId),
+        });
+
+        return user?.subscribed;
+    }
