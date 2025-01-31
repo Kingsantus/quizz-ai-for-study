@@ -15,8 +15,6 @@ const UpgradePlan = () => {
                 body: JSON.stringify({ price })
             }).then((res) => res.json());
 
-            console.log({...sessionId});
-
             const stripe = await getStripe();
             stripe?.redirectToCheckout({ sessionId });
         } catch(error) {

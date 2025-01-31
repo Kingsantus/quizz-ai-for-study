@@ -22,7 +22,7 @@ function SignOut() {
 
 const Header = async () => {
     const session = await auth();
-    // console.log(session)
+    
     return (
         <header>
             <nav className="px-4 py-2.5">

@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const UploadDoc = () => {
-    const [document, setDocument] = useState<Blob | File | null | undefined>(null);
+    const [document, setDocument] = useState< File | null | undefined>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [error, setError] = useState<string>("");
     const router = useRouter();

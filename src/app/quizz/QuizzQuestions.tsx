@@ -11,7 +11,9 @@ import { useRouter } from "next/navigation";
 import { SaveSubmissions } from "../actions/saveSubmissions";
 
 type Answer = InferSelectModel<typeof questionAnswers>;
-type Question = InferSelectModel<typeof dbQuestions>;
+type Question = InferSelectModel<typeof dbQuestions > & {
+    answers: Answer[]; // Add 'answers' property to Question type
+};;
 type Quizz = InferSelectModel<typeof quizzes> & { questions: Question[] };
 
 type Props = {
