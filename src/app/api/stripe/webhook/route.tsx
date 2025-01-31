@@ -16,7 +16,7 @@ export async function POST(req:Request) {
 
     const webHookSecret = process.env.NODE_ENV === "production" 
         ? process.env.NEXT_STRIPE_WEBHOOK_SECRET 
-        : "whsec_5a2418cb401b9486b03b21cc9353dbc6c48ec3cce7a2ed22d0a1892e3c6de312";
+        : process.env.NEXT_STRIPE_WEBHOOK_LOCAL_SERCRET;
 
     if (!webHookSecret){
         throw new Error(
